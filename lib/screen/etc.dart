@@ -1,0 +1,26 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class Etc extends StatelessWidget {
+  const Etc({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('기타'),
+      ),
+      body: Container(
+        margin: EdgeInsets.all(12.0),
+        child: Column(
+          children: [
+            SizedBox(height: 40.0,),
+            Text(
+              'Incheon National University (2022.02 졸업)\n전공 : NanoBio Engineering 편입 후 졸업'
+            )
+          ],
+        ),
+      )
+    );
+  }
+}
