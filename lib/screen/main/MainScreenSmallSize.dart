@@ -38,6 +38,8 @@ class _MainScreenSmallSizeState extends State<MainScreenSmallSize> {
               child: Image.asset(imageValue),
             ),
             Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MouseRegion(
                     cursor: SystemMouseCursors.click,
@@ -134,6 +136,8 @@ class _MainScreenSmallSizeState extends State<MainScreenSmallSize> {
             ),
             SizedBox(height: 40.0),
             Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MouseRegion(
                     cursor: SystemMouseCursors.click,
