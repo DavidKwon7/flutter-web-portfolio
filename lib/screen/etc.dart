@@ -9,6 +9,7 @@ class Etc extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('기타'),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: Container(
         margin: EdgeInsets.all(12.0),

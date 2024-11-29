@@ -25,18 +25,21 @@ class _MainScreenSmallSizeState extends State<MainScreenSmallSize> {
     return Scaffold(
       appBar: AppBar(
         title: Text('My Portfolio'),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 20,),
             Container(
               width: screenWidth,
-              height: screenHeight/2 - 20,
+              height: screenHeight/2 - 40,
               alignment: Alignment.center,
               margin: EdgeInsets.only(right: 20.0),
               // child: Text('Mouse Status : $status'),
               child: Image.asset(imageValue),
             ),
+            SizedBox(height: 20,),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,

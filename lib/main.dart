@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('My Portfolio'),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: Center(
         child: Row(

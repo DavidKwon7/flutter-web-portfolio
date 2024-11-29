@@ -10,6 +10,7 @@ class Company extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('회사 상세 경력'),
+          backgroundColor: Colors.lightBlueAccent,
         ),
         body: SingleChildScrollView(
             scrollDirection: Axis.vertical,

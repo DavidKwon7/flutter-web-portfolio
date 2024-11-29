@@ -10,6 +10,7 @@ class Activity extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('다양한 활동'),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       /// SingleChildScrollView 추가하기
       body: Container(

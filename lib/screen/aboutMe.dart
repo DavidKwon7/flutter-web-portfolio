@@ -9,6 +9,7 @@ class AboutMe extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('나에 대해서'),
+        backgroundColor: Colors.lightBlueAccent,
       ),
       body: Center(
         child: Column(
