@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:untitled/WidgetTree.dart';
 import 'package:untitled/component/menuItemButton.dart';
 import 'package:untitled/screen/aboutMe.dart';
 import 'package:untitled/screen/activity.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Mouse Region'),
+      home: WidgetTree(),//MyHomePage(title: 'Flutter Mouse Region'),
       routes: {
         '/about_me' : (context) => const AboutMe(),
         '/company' : (context) => const Company(),

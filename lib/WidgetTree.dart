@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/ResponsiveLayout.dart';
+import 'package:untitled/screen/main/MainScreenSmallSize.dart';
+
+import 'main.dart';
 
 class WidgetTree extends StatelessWidget {
   const WidgetTree({super.key});
@@ -8,19 +11,10 @@ class WidgetTree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('My Portfolio'),
-        ),
         body: ResponsiveLayout(
-            smallLayout: Column(
-              /// TODO Widget 생성
-            ),
-            mediumLayout: Column(
-              /// TODO Widget 생성
-            ),
-            largeLayout: Column(
-              /// TODO Widget 생성
-            )
+            smallLayout: MainScreenSmallSize(),
+            mediumLayout: MainScreenSmallSize(),
+            largeLayout: MyHomePage(title: 'large',)
         )
     );
   }
