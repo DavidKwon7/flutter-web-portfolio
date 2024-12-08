@@ -32,39 +32,41 @@ class Activity extends StatelessWidget {
                 SizedBox(height: 40.0,),
                 CustomTitleText(text: '발표'),
 
-                CustomBodyText(text: '2023년 발표 리스트'),
-                HyperlinkText(
-                  text: 'HelloWorld 2023 발표 - wear os 101',
-                  url: 'https://speakerdeck.com/davidkwon7/wearos-101',
-                ),
-                HyperlinkText(
-                    text: 'KontlinConf’23 발표 - flow 느껴보기',
-                    url: 'https://speakerdeck.com/davidkwon7/flow-neuggyeobogi'
-                ),
-                HyperlinkText(
-                  text: '2023.06 Google I/O Extended(Incheon) 발표 - relay 및 compose를 사용하여 완전한 앱 빌드하기',
-                  url: 'https://speakerdeck.com/davidkwon7/relay-mic-composereul-sayonghayeo-wanjeonhan-aeb-bildeuhagi',
-                ),
-                Text('Mobile App Developer Conf(MADC) 토크 패널 참여'),
-                HyperlinkText(
-                    text: 'DevFest’23 발표 - UI Test with compose',
-                    url: 'https://speakerdeck.com/davidkwon7/ui-test-with-compose'
-                ),
-
-                SizedBox(height: 20.0,),
-
                 CustomBodyText(text: '2024년 발표 리스트'),
                 HyperlinkText(
-                  text: '2024.03 HelloWorld 24 발표 - 모바일 플랫폼별 선언형 UI 살펴보기',
-                  url: 'https://docs.google.com/presentation/d/1Jv5qosD6bwKZLPguKWevW8r0B41j0VbaRUkJydnvCt4/edit#slide=id.g2c5f9ab8e71_2_60',
+                    text: '2024.07 Google I/O Extended(Incheon) 발표 - Jetpack Glance 살펴보기',
+                    url: 'https://speakerdeck.com/davidkwon7/jetpack-glance'
                 ),
                 HyperlinkText(
                   text: '2024.06 kotlinConf’24 발표 - Refactoring to expressive kotlin ',
                   url: 'https://speakerdeck.com/davidkwon7/refactoring-to-expressive-kotlin',
                 ),
                 HyperlinkText(
-                    text: '2024.07 Google I/O Extended(Incheon) 발표 - Jetpack Glance 살펴보기',
-                    url: 'https://speakerdeck.com/davidkwon7/jetpack-glance'),
+                  text: '2024.03 HelloWorld 24 발표 - 모바일 플랫폼별 선언형 UI 살펴보기',
+                  url: 'https://docs.google.com/presentation/d/1Jv5qosD6bwKZLPguKWevW8r0B41j0VbaRUkJydnvCt4/edit#slide=id.g2c5f9ab8e71_2_60',
+                ),
+
+
+                SizedBox(height: 20.0,),
+
+                CustomBodyText(text: '2023년 발표 리스트'),
+                HyperlinkText(
+                    text: '2023.12 DevFest’23 발표 - UI Test with compose',
+                    url: 'https://speakerdeck.com/davidkwon7/ui-test-with-compose'
+                ),
+                Text('2023.11 Mobile App Developer Conf(MADC) 토크 패널 참여'),
+                HyperlinkText(
+                  text: '2023.08 Google I/O Extended(Incheon) 발표 - relay 및 compose를 사용하여 완전한 앱 빌드하기',
+                  url: 'https://speakerdeck.com/davidkwon7/relay-mic-composereul-sayonghayeo-wanjeonhan-aeb-bildeuhagi',
+                ),
+                HyperlinkText(
+                    text: '2023.05 KontlinConf’23 발표 - flow 느껴보기',
+                    url: 'https://speakerdeck.com/davidkwon7/flow-neuggyeobogi'
+                ),
+                HyperlinkText(
+                  text: '2023.03 HelloWorld 2023 발표 - wear os 101',
+                  url: 'https://speakerdeck.com/davidkwon7/wearos-101',
+                ),
 
                 SizedBox(height: 40.0,),
                 CustomTitleText(text: '스터디'),
@@ -72,8 +74,8 @@ class Activity extends StatelessWidget {
                 Text.rich(
                     TextSpan(
                         children: <TextSpan>[
-                          TextSpan(text: '｢오브젝트｣', style: TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
-                          TextSpan(text: '북스터디')
+                          TextSpan(text: '｢오브젝트｣ ', style: TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+                          TextSpan(text: '북스터디 (24.09 ~ 24.11)')
                         ]
                     )
                 ),
@@ -81,7 +83,7 @@ class Activity extends StatelessWidget {
                     TextSpan(
                         children: <TextSpan>[
                           TextSpan(text: 'Android Jetpack Compose ', style: TextStyle(fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
-                          TextSpan(text: '스터디')
+                          TextSpan(text: '스터디 (23.04 ~ 23.06)')
                         ]
                     )
                 ),

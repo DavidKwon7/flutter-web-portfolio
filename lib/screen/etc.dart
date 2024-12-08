@@ -17,8 +17,12 @@ class Etc extends StatelessWidget {
           children: [
             SizedBox(height: 40.0,),
             Text(
-              'Incheon National University (2022.02 졸업)\n전공 : NanoBio Engineering 편입 후 졸업'
-            )
+              '- Incheon National University (2022.02 졸업)'
+                  '\n전공 : NanoBio Engineering 편입 후 졸업'
+                  '\n'
+                  '\n'
+                  '\n- 육군 만기 전역 (2018.04 ~ 2020.12)',
+            ),
           ],
         ),
       )
