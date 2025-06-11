@@ -36,7 +36,7 @@ class Activity extends StatelessWidget {
               const CustomBodyText(text: '2025년 발표 리스트'),
               const HyperlinkText(
                   text: '2025.04 Build With AI 2025 발표 - Android는 어떻게 화면을 그릴까?',
-                  url: 'https://speakerdeck.com/davidkwon7/jetpack-glance'),
+                  url: 'https://speakerdeck.com/davidkwon7/androidneun-eoddeohge-hwamyeoneul-geurilgga'),
               const SizedBox(height: 20.0,),
 
               const CustomBodyText(text: '2024년 발표 리스트'),
