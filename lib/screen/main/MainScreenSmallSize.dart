@@ -6,14 +6,14 @@ import '../activity.dart';
 import '../company.dart';
 import '../etc.dart';
 
-class MainScreenSmallSize extends StatefulWidget {
-  const MainScreenSmallSize({super.key});
+class MainSmallSizeScreen extends StatefulWidget {
+  const MainSmallSizeScreen({super.key});
 
   @override
-  State<MainScreenSmallSize> createState() => _MainScreenSmallSizeState();
+  State<MainSmallSizeScreen> createState() => _MainSmallSizeScreenState();
 }
 
-class _MainScreenSmallSizeState extends State<MainScreenSmallSize> {
+class _MainSmallSizeScreenState extends State<MainSmallSizeScreen> {
   String imageValue = 'assets/images/img_default.jpeg';
 
   @override
