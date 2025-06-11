@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Etc extends StatelessWidget {
@@ -8,12 +7,12 @@ class Etc extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('기타'),
+        title: const Text('기타'),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: Container(
-        margin: EdgeInsets.all(12.0),
-        child: Column(
+        margin: const EdgeInsets.all(12.0),
+        child: const Column(
           children: [
             SizedBox(height: 40.0,),
             Text(

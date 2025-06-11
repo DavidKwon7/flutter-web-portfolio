@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:untitled/WidgetTree.dart';
 import 'package:untitled/screen/aboutMe.dart';
 import 'package:untitled/screen/activity.dart';
 import 'package:untitled/screen/company.dart';
 import 'package:untitled/screen/etc.dart';
-import 'package:untitled/screen/main/MainScreenPortfolioButton.dart';
 
 void main() {
   runApp(MyApp());

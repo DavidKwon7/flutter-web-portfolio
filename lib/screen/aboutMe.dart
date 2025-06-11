@@ -11,13 +11,13 @@ class AboutMe extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('나에 대해서'),
+        title: const Text('나에 대해서'),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: SingleChildScrollView(
           child: Container(
             margin: const EdgeInsets.all(20.0),
-            child: Column(
+            child: const Column(
               children: [
                 CustomTitleText(text: '가치관'),
                 Text(
@@ -39,8 +39,6 @@ class AboutMe extends StatelessWidget {
                       image: 'assets/images/img_compose.png',
                       text: 'Compose 중급',
                     ),
-                    // Text('- Hilt'),
-                    // Text('- Coroutine / Flow'),
                     CustomTextImageCard(
                       image: 'assets/images/img_kotlin.png',
                       text: 'Kotlin 중급',
@@ -49,18 +47,12 @@ class AboutMe extends StatelessWidget {
                       image: 'assets/images/img_java.png',
                       text: 'Java 초급',
                     ),
-                    //Text('- Kotlin 중급'),
-                    //Text('- Java 초급'),
                   ],
                 ),
                 SizedBox(height: 10,),
 
                 CustomTitleWithBorder(title: 'Others'),
-                // Text('- Flutter \n Dart 초급'),
-                // Text('- Dart 초급'),
-                // Text('- CodeIgniter / PHP 초급'),
-                // Text('- PHP 초급'),
-                // Text('- SQL 초급'),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -81,9 +73,6 @@ class AboutMe extends StatelessWidget {
                 SizedBox(height: 10,),
 
                 CustomTitleWithBorder(title: 'ETC'),
-                // Text('- Git / Github / GithubAction'),
-                // Text('- Notion'),
-                // Text('- Slack'),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

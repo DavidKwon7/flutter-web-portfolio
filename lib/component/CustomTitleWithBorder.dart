@@ -15,15 +15,11 @@ class CustomTitleWithBorder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
         children: <Widget>[
-          Expanded(
-              child: Divider()
-          ),
-          SizedBox(width: 8,),
+          const Expanded(child: Divider()),
+          const SizedBox(width: 8,),
           CustomBodyText(text: title,),
-          SizedBox(width: 8,),
-          Expanded(
-              child: Divider()
-          ),
+          const SizedBox(width: 8,),
+          const Expanded(child: Divider()),
         ]
     );
   }

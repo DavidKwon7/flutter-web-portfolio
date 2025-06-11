@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'MainScreenPortfolioButton.dart';
@@ -31,7 +30,6 @@ class _MainLargeSizeScreenState extends State<MainLargeSizeScreen> {
                 child: Container(
                   alignment: Alignment.center,
                   margin: const EdgeInsets.only(right: 20.0),
-                  // child: Text('Mouse Status : $status'),
                   child: Image.asset(imageValue),
                 )
             ),

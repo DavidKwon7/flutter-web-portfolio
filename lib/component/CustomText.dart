@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -8,25 +7,22 @@ class CustomTitleText extends StatefulWidget {
   final String text;
 
   const CustomTitleText({
-    Key? key,
+    super.key,
     required this.text,
-  }) : super(key: key);
+  });
 
   @override
-  _CustomTitleTextState createState() => _CustomTitleTextState();
+  State<CustomTitleText> createState() => _CustomTitleTextState();
 }
 
 class _CustomTitleTextState extends State<CustomTitleText> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-    child: Text(
-      widget.text,
-      style: TextStyle(
-        fontSize: 32.0,
-        fontWeight: FontWeight.w800
+      child: Text(
+        widget.text,
+        style: const TextStyle(fontSize: 32.0, fontWeight: FontWeight.w800),
       ),
-    ),
     );
   }
 }
@@ -44,11 +40,9 @@ class CustomBodyText extends StatefulWidget {
 class _CustomBodyTextState extends State<CustomBodyText> {
   @override
   Widget build(BuildContext context) {
-    return Text(widget.text,
-      style: TextStyle(
-        fontSize: 20.0,
-        fontWeight: FontWeight.w500
-      ),
+    return Text(
+      widget.text,
+      style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
     );
   }
 }
@@ -58,31 +52,31 @@ class HyperlinkText extends StatelessWidget {
   final String text;
   final String url;
 
-  const HyperlinkText({Key? key, required this.text, required this.url}) : super(key: key);
+  const HyperlinkText({super.key, required this.text, required this.url});
 
   @override
   Widget build(BuildContext context) {
     return RichText(
-    text: TextSpan(
+      text: TextSpan(
         style: DefaultTextStyle.of(context).style,
         children: [
-        TextSpan(
-        text: text,
-        style: TextStyle(
-          color: Colors.blue,
-          decoration: TextDecoration.underline,
-        ),
-        recognizer: TapGestureRecognizer()..onTap = () async {
-        if (await canLaunch(url)) {
-          await launch(url);
-        } else {
-          throw 'Could not launch $url';
-        }
-      },
-    ),
-    ],
-    ),
+          TextSpan(
+            text: text,
+            style: const TextStyle(
+              color: Colors.blue,
+              decoration: TextDecoration.underline,
+            ),
+            recognizer: TapGestureRecognizer()
+              ..onTap = () async {
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Could not launch $url';
+                }
+              },
+          ),
+        ],
+      ),
     );
   }
 }
-
