@@ -1,10 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../about_me.dart';
-import '../activity.dart';
-import '../company.dart';
-import '../etc.dart';
+import 'main_screen_portfolio_button.dart';
 
 class MainSmallSizeScreen extends StatefulWidget {
   const MainSmallSizeScreen({super.key});
@@ -24,210 +20,96 @@ class _MainSmallSizeScreenState extends State<MainSmallSizeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Portfolio'),
+        title: const Text('My Portfolio'),
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Container(
               width: screenWidth,
               height: screenHeight/2 - 40,
               alignment: Alignment.center,
-              margin: EdgeInsets.only(right: 20.0),
-              // child: Text('Mouse Status : $status'),
+              margin: const EdgeInsets.only(right: 20.0),
               child: Image.asset(imageValue),
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    opaque: false,
-                    onEnter: (s) {
-                      setState(() {
-                        // status = 'Mouse Entered in region';
-                        imageValue = 'assets/images/img_about_me.jpeg';
-                      });
-                    },
-                    onHover: (s) {
-                      setState(() {
-                        // status = '나에 대해서 ON';
-                        imageValue = 'assets/images/img_about_me.jpeg';
-                      });
-                    },
-                    onExit: (s) {
-                      setState(() {
-                        // status = '나에 대해서 OFF';
-                        imageValue = 'assets/images/img_default.jpeg';
-                      });
-                    },
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const AboutMe()));
-                      },
-                      child: Container(
-                        height: 200.0,
-                        width: 200.0,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent,
-                          borderRadius: BorderRadius.circular(15.0),
-                          border: Border.all(color: Colors.blueAccent),
-                        ),
-                        alignment: Alignment.center,
-                        child: const Text(
-                          '나에 대해서',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.w500
-                          ),
-                        ),
-                      ),
-                    )
+                MainScreenPortfolioButton(
+                  text: '나에 대해서',
+                  routeName: '/about_me',
+                  hoverImage: 'assets/images/img_about_me.jpeg',
+                  onHoverImage: (imagePath) {
+                    setState(() {
+                      imageValue = imagePath;
+                    });
+                  },
+                  onExitImage: () {
+                    setState(() {
+                      imageValue = 'assets/images/img_default.jpeg';
+                    });
+                  },
                 ),
-                SizedBox(width: 40.0),
-                MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    opaque: false,
-                    onEnter: (s) {
-                      setState(() {
-                        // status = 'Mouse Entered in region';
-                        imageValue = 'assets/images/img_company.jpeg';
-                      });
-                    },
-                    onHover: (s) {
-                      setState(() {
-                        // status = '회사 경력 상세 ON';
-                        imageValue = 'assets/images/img_company.jpeg';
-                      });
-                    },
-                    onExit: (s) {
-                      setState(() {
-                        // status = '회사 경력 상세 OFF';
-                        imageValue = 'assets/images/img_default.jpeg';
-                      });
-                    },
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const Company()));
-                      },
-                      child: Container(
-                        height: 200.0,
-                        width: 200.0,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent,
-                          borderRadius: BorderRadius.circular(15.0),
-                          border: Border.all(color: Colors.blueAccent),
-                        ),
-                        alignment: Alignment.center,
-                        child: const Text(
-                          '회사 경력 상세',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.w500
-                          ),
-                        ),
-                      ),
-                    )
+                const SizedBox(width: 40.0),
+
+                MainScreenPortfolioButton(
+                  text: '회사 경력 상세',
+                  routeName: '/company',
+                  hoverImage: 'assets/images/img_company.jpeg',
+                  onHoverImage: (imagePath) {
+                    setState(() {
+                      imageValue = imagePath;
+                    });
+                  },
+                  onExitImage: () {
+                    setState(() {
+                      imageValue = 'assets/images/img_default.jpeg';
+                    });
+                  },
                 ),
               ],
             ),
-            SizedBox(height: 40.0),
+            const SizedBox(height: 40.0),
+
             Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    opaque: false,
-                    onEnter: (s) {
-                      setState(() {
-                        imageValue = 'assets/images/img_activity.JPG';
-                      });
-                    },
-                    onHover: (s) {
-                      setState(() {
-                        // status = '다양한 활동 ON';
-                        imageValue = 'assets/images/img_activity.JPG';
-                      });
-                    },
-                    onExit: (s) {
-                      setState(() {
-                        // status = '다양한 활동 OFF';
-                        imageValue = 'assets/images/img_default.jpeg';
-                      });
-                    },
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const Activity()));
-                      },
-                      child: Container(
-                        height: 200.0,
-                        width: 200.0,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent,
-                          borderRadius: BorderRadius.circular(15.0),
-                          border: Border.all(color: Colors.blueAccent),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text(
-                          '다양한 활동',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.w500
-                          ),
-                        ),
-                      ),
-                    )
+                MainScreenPortfolioButton(
+                  text: '다양한 활동',
+                  routeName: '/activity',
+                  hoverImage: 'assets/images/img_activity.JPG',
+                  onHoverImage: (imagePath) {
+                    setState(() {
+                      imageValue = imagePath;
+                    });
+                  },
+                  onExitImage: () {
+                    setState(() {
+                      imageValue = 'assets/images/img_default.jpeg';
+                    });
+                  },
                 ),
-                SizedBox(width: 40.0),
-                MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    opaque: false,
-                    onEnter: (s) {
-                      setState(() {
-                        imageValue = 'assets/images/img_etc.jpg';
-                      });
-                    },
-                    onHover: (s) {
-                      setState(() {
-                        imageValue = 'assets/images/img_etc.jpg';
-                      });
-                    },
-                    onExit: (s) {
-                      setState(() {
-                        imageValue = 'assets/images/img_default.jpeg';
-                      });
-                    },
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const Etc()));
-                      },
-                      child: Container(
-                        height: 200.0,
-                        width: 200.0,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent,
-                          borderRadius: BorderRadius.circular(15.0),
-                          border: Border.all(color: Colors.blueAccent),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text(
-                          '기타',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                    )
+                const SizedBox(width: 40.0),
+
+                MainScreenPortfolioButton(
+                  text: '기타',
+                  routeName: '/etc',
+                  hoverImage: 'assets/images/img_etc.jpg',
+                  onHoverImage: (imagePath) {
+                    setState(() {
+                      imageValue = imagePath;
+                    });
+                  },
+                  onExitImage: () {
+                    setState(() {
+                      imageValue = 'assets/images/img_default.jpeg';
+                    });
+                  },
                 ),
               ],
             ),
