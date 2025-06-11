@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'CustomText.dart';
+import 'custom_text.dart';
 
 class CustomTitleWithBorder extends StatelessWidget {
   const CustomTitleWithBorder({

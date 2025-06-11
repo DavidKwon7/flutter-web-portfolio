@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/WidgetTree.dart';
-import 'package:untitled/screen/aboutMe.dart';
+import 'package:untitled/widget_tree.dart';
+import 'package:untitled/screen/about_me.dart';
 import 'package:untitled/screen/activity.dart';
 import 'package:untitled/screen/company.dart';
 import 'package:untitled/screen/etc.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/component/CustomText.dart';
+import 'package:untitled/component/custom_text.dart';
 
-import '../component/CustomTitleWithBorder.dart';
+import '../component/custom_title_with_border.dart';
 
 class Company extends StatelessWidget {
   const Company({super.key});

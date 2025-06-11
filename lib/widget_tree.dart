@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/ResponsiveLayout.dart';
-import 'package:untitled/screen/main/MainLargeSizeScreen.dart';
-import 'package:untitled/screen/main/MainScreenSmallSize.dart';
+import 'package:untitled/responsive_layout.dart';
+import 'package:untitled/screen/main/main_large_size_screen.dart';
+import 'package:untitled/screen/main/main_small_size_screen.dart';
 
 class WidgetTree extends StatelessWidget {
   const WidgetTree({super.key});

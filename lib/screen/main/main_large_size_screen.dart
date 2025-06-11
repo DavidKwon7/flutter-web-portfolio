@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'MainScreenPortfolioButton.dart';
+import 'main_screen_portfolio_button.dart';
 
 class MainLargeSizeScreen extends StatefulWidget {
   const MainLargeSizeScreen({

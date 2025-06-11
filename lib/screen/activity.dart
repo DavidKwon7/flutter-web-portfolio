@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/component/CustomText.dart';
+import 'package:untitled/component/custom_text.dart';
 
 class Activity extends StatelessWidget {
   const Activity({super.key});

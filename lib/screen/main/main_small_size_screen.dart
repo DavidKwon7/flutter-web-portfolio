@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../aboutMe.dart';
+import '../about_me.dart';
 import '../activity.dart';
 import '../company.dart';
 import '../etc.dart';
