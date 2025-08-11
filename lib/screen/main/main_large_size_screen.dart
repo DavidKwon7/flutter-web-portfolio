@@ -61,7 +61,7 @@ class _MainLargeSizeScreenState extends State<MainLargeSizeScreen> {
                         MainScreenPortfolioButton(
                           text: '회사 경력 상세',
                           routeName: '/company',
-                          hoverImage: 'assets/images/img_company.jpeg',
+                          hoverImage: 'assets/images/img_company2.jpg',
                           onHoverImage: (imagePath) {
                             setState(() {
                               imageValue = imagePath;

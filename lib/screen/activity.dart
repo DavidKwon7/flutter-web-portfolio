@@ -30,10 +30,13 @@ class Activity extends StatelessWidget {
               ),
               const SizedBox(height: 40.0,),
 
-              const CustomTitleText(text: '발표'),
+              const CustomTitleText(text: 'Presentation'),
               const SizedBox(height: 8.0,),
 
               const CustomBodyText(text: '2025년 발표 리스트'),
+              const HyperlinkText(
+                  text: '2025.07 Google I/O Extended(Incheon) 발표 - What’s new in Android 2025',
+                  url: 'https://speakerdeck.com/davidkwon7/whats-new-in-android-2025'),
               const HyperlinkText(
                   text: '2025.04 Build With AI 2025 발표 - Android는 어떻게 화면을 그릴까?',
                   url: 'https://speakerdeck.com/davidkwon7/androidneun-eoddeohge-hwamyeoneul-geurilgga'),
@@ -69,9 +72,21 @@ class Activity extends StatelessWidget {
                 text: '2023.03 HelloWorld 2023 발표 - wear os 101',
                 url: 'https://speakerdeck.com/davidkwon7/wearos-101',
               ),
-              const SizedBox(height: 40.0,),
 
-              const CustomTitleText(text: '스터디'),
+              const SizedBox(height: 40.0,),
+              const CustomTitleText(text: 'Open Source Contribution'),
+              const SizedBox(height: 10.0,),
+              const HyperlinkText(
+                text: 'okhttp - mockwebserver3 업데이트 관련 readme 문서 작성',
+                url: 'https://github.com/square/okhttp/pull/8922',
+              ),
+              const HyperlinkText(
+                text: 'coil - uri copy 및 수정 기능 구현 및 테스트 코드 작성',
+                url: 'https://github.com/coil-kt/coil/pull/3055',
+              ),
+
+              const SizedBox(height: 40.0,),
+              const CustomTitleText(text: 'Study'),
               const SizedBox(height: 10.0,),
 
               const Text.rich(TextSpan(children: <TextSpan>[
